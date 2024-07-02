@@ -1,0 +1,11 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: My step
+        uses: Battleman/greedy-action@1
+        with:
+          my-input: "world"
