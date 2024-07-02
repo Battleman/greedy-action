@@ -6,20 +6,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: My step
-        uses: Battleman/greedy-action@2
+        uses: Battleman/greedy-action/.github/workflows/baseaction.yml@3
         with:
           my-input: "By tag"
   job-byhash:
     runs-on: ubuntu-latest
     steps:
       - name: My step
-        uses: Battleman/greedy-action@2b6be65d39c55059d4c92108b1881d76bfe25244
+        uses: Battleman/greedy-action/.github/workflows/baseaction.yml@31525031d9873acb2fa8152e8c906a519ee9f939
         with:
           my-input: "By hash"
   job-bybranch:
     runs-on: ubuntu-latest
     steps:
       - name: My step
-        uses: Battleman/greedy-action@base-action
+        uses: Battleman/greedy-action/.github/workflows/baseaction.yml@base-action
         with:
           my-input: "By branch"
