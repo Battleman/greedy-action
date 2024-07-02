@@ -3,23 +3,14 @@ on:
 
 jobs:
   job-bytag:
-    runs-on: ubuntu-latest
-    steps:
-      - name: My step
-        uses: Battleman/greedy-action/.github/workflows/baseaction.yml@3
-        with:
-          my-input: "By tag"
+    uses: Battleman/greedy-action/.github/workflows/baseaction.yml@3
+    with:
+      my-input: "By tag"
   job-byhash:
-    runs-on: ubuntu-latest
-    steps:
-      - name: My step
-        uses: Battleman/greedy-action/.github/workflows/baseaction.yml@31525031d9873acb2fa8152e8c906a519ee9f939
-        with:
-          my-input: "By hash"
+    uses: Battleman/greedy-action/.github/workflows/baseaction.yml@31525031d9873acb2fa8152e8c906a519ee9f939
+    with:
+      my-input: "By hash"
   job-bybranch:
-    runs-on: ubuntu-latest
-    steps:
-      - name: My step
-        uses: Battleman/greedy-action/.github/workflows/baseaction.yml@base-action
-        with:
-          my-input: "By branch"
+    uses: Battleman/greedy-action/.github/workflows/baseaction.yml@base-action
+    with:
+      my-input: "By branch"
